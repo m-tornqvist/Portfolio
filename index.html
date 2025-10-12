@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Yläpalkki -->
+  <header class="navbar">
+    <div class="logo" data-fi="PORTFOLIO" data-en="PORTFOLIO">PORTFOLIO</div>
+    <nav id="nav-menu">
+      <ul id="menu">
+        <li><a href="#work" data-fi="Työni" data-en="Work">Työni</a></li>
+        <li><a href="#about" data-fi="Tietoa minusta" data-en="About me">Tietoa minusta</a></li>
+        <li><a href="#tools" data-fi="Työkalut" data-en="Tools">Työkalut</a></li>
+        <li><a href="#contact" data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+      <button onclick="setLanguage('fi')">FI</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+  <!-- Hero-osio -->
+  <section class="hero">
+    <img src="images/Matilda.jpg" alt="Oma kuva" class="hero-img">
+    <div class="hero-text">
+      <h1 data-fi="Moi, mun nimi on Matilda!" data-en="Hi, I'm Matilda!">Moi, mun nimi on Matilda!</h1>
+      <p data-fi="Minulle on tärkeää tarjota visuaalista edustusta yrityksille ja heille, ketkä tarvitsevat sitä projekteihinsa. Arvostan hyvää laatua ja minulle on sydämen tehtävä päästä tuottamaan hyvän laatuista ja alkuperäistä materiaalia." 
+         data-en="As an artist, I want to offer visual representation for businesses and to anyone who needs it in their projects. I value good quality, and it's important to me to produce original content.">
+         Minulle on tärkeää tarjota visuaalista edustusta yrityksille ja heille, ketkä tarvitsevat sitä projekteihinsa. Arvostan hyvää laatua ja minulle on sydämen tehtävä päästä tuottamaan hyvän laatuista ja alkuperäistä materiaalia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work-sivu -->
+  <section id="work" class="page-section">
+    <h2 data-fi="Työt" data-en="Work">Työt</h2>
+    <div class="img-container">
+      <div class="img"><img src="images/projects/Candyland.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/logo.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/eyes1.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/robot2.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/room3.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/UselessRobot.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/Candyland.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/simasitsit.jpg" alt="logo"></div>
+      <div class="img"><img src="images/projects/lännennopein3.png" alt="logo"></div>
+      <div class="img"><img src="images/projects/bow.png" alt="logo"></div>
+    </div>
+
+    <button id="loadMoreBtn" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button> 
+  </section>
+
+  <!-- About-sivu -->
+  <section id="about" class="page-section">
+
+    <h2 data-fi="Minusta lyhyesti" data-en="Briefly about me">Minusta lyhyesti</h2>
+
+    <p data-fi="Graafinen suunnittelu │ luonnostelu"
+       data-en="Graphic design │ sketching">
+       Graafinen suunnittelu │ luonnostelu
+    </p>
+    <p data-fi="&#9734; Tietojenkäsittelyn tradenomiopiskelija (digitaalisten palvelujen kehittäminen), Laurea ammattikorkeakoulu, 2024-2027, aktiivinen"
+       data-en="&#9734; Bachelor of Business Information Technology student (development of digital services), Laurea university of applied sciences, 2024-2027, active">&#9734; Tietojenkäsittelyn tradenomiopiskelija (digitaalisten palvelujen kehittäminen), Laurea ammattikorkeakoulu, 2024-2027, aktiivinen
+    </p>
+    <p data-fi="&#9734; Tieto- ja viestintätekniikan perustutkinto (ohjelmistokehittäjä), Careeria, 2021-2023, valmistunut"
+       data-en="&#9734; Qualification in software development, Careeria, 2021-2023, graduated">&#9734; Tieto- ja viestintätekniikan perustutkinto (ohjelmistokehittäjä), Careeria, 2021-2023, valmistunut
+    </p>
+    &nbsp;
+    <p data-fi="&#9734; Toteutan graafisen suunnittelun ja luonnostelun palveluita opiskelijana. Voin kohdistaa osaamistani myös käsin piirrettyihin ja maalattuihin projekteihin. Luon kanssasi suunnitelman omiin tarpeisiisi sopivaksi ja toteutan visuaaliset toiveesi tuoden myös oman näkökulman ja osaamisen pöydälle."
+       data-en="&#9734; I provide graphic design services as a student. I can also focus my skills on hand-drawn and painted projects. I will create a plan with you to suit your needs and implement your visual wishes, while also bringing my own perspective and expertise to the table.">&#9734; Toteutan graafisen suunnittelun ja luonnostelun palveluita opiskelijana. Voin kohdistaa osaamistani myös käsin piirrettyihin ja maalattuihin projekteihin. Luon kanssasi suunnitelman omiin tarpeisiisi sopivaksi ja toteutan visuaaliset toiveesi tuoden myös oman näkökulman ja osaamisen pöydälle.
+    </p>
+    &nbsp;
+    <h2 data-fi="Tarinani" data-en="My journey">Tarinani</h2>
+    <p data-fi="Niin kuin varmasti monelle, luova ilmaisu on ollut minulle kaikki kaikessa jo pienestä pitäen. Onnekseni luovuuden soihtu jatkoi palamista kohdallani. Se jatkui läpi nuoruuteni, vaihtaen muotoaan piirtämisestä maalaukseen, maalauksesta digitaaliseen taiteeseen ja jo 14-vuotiaana pääsin 3D muotoilun makuun. Nyt kun työkalut rupeaa tosissaan pysymään käsissä, pääsen laittamaan visioni oikeasti kehiin ja luomaan sillä uraa. Tämä portfolio olkoon hyvä esimerkki, koodasin tämän itse! Mikään ei luo minulle paremmin merkitystä kuin jo ajatus siitä, että pääsen toteuttamaan itseäni, mutta ennen kaikkea auttamaan asiakkaita saavuttamaan heidän visuaaliset tavoitteensa."
+       data-en="Like many people, creative expression has been everything to me since I was a child. Luckily, the torch of creativity continued to burn for me. It continued throughout my youth, changing its form from drawing to painting, from painting to digital art, and at the age of 14 I already got a taste of 3D design. Now that I really have the tools in my hands, I can put my vision into action and create a career with it. Let this portfolio be a good example, I coded it myself! Nothing creates meaning better to me than the thought of being able to fulfill myself, but before all else, help clients achieve their visual goals.">
+       Niin kuin varmasti monelle, luova ilmaisu on ollut minulle kaikki kaikessa jo pienestä pitäen. Onnekseni luovuuden soihtu jatkoi palamista kohdallani. Se jatkui läpi nuoruuteni, vaihtaen muotoaan piirtämisestä maalaukseen, maalauksesta digitaaliseen taiteeseen ja jo 14-vuotiaana pääsin 3D muotoilun makuun. Nyt kun työkalut rupeaa tosissaan pysymään käsissä, pääsen laittamaan visioni oikeasti kehiin ja luomaan sillä uraa. Tämä portfolio olkoon hyvä esimerkki, koodasin tämän itse! Mikään ei luo minulle paremmin merkitystä kuin jo ajatus siitä, että pääsen toteuttamaan itseäni, mutta ennen kaikkea auttamaan asiakkaita saavuttamaan heidän visuaaliset tavoitteensa.
+    </p>
+    &nbsp;
+    <p data-fi="Olen aina ollut määrätietoinen siitä, mitä haluan saavuttaa. Tieni vei minut ammatillisen perustutkinnon pariin ja valmistuin tieto- ja viestintätekniikan perustutkinnosta ohjelmistokehittäjän papereilla vuonna 2023. Pystyn melko hyvällä omatunnolla myöntämään, että opiskelut sujuivat mainiosti. Onnekseni hyvä koulumenestykseni avasi ovet ammattikorkeakouluun ja juuri nyt opiskelen 2. vuotta tietojenkäsittelyn tradenomiksi Laureassa, keskityksenä digitaalisten palvelujen kehittäminen. Laureassa olen saanut erinomaisia työkaluja taitojeni kehittämiseen ja siksi uskaltauduinkin laittamaan haaveeni luovasta urasta eteenpäin."
+       data-en="I have always been determined about what I want to achieve. My path took me to a vocational school and I graduated with a vocational qualification in software development in 2023. I can admit with a fairly good conscience that my studies went great. Luckily, my good academic performance opened the doors to a university of applied sciences and I am currently in my second year of studying for a Bachelor of Business Administration in Information Technology at Laurea, with a focus on developing digital services. At Laurea, I have received excellent tools to develop my skills and that is why I dared to pursue my dream career.">
+       Olen aina ollut määrätietoinen siitä, mitä haluan saavuttaa. Tieni vei minut ammatillisen perustutkinnon pariin ja valmistuin tieto- ja viestintätekniikan perustutkinnosta ohjelmistokehittäjän papereilla vuonna 2023. Pystyn melko hyvällä omatunnolla myöntämään, että opiskelut sujuivat mainiosti. Onnekseni hyvä koulumenestykseni avasi ovet ammattikorkeakouluun ja juuri nyt opiskelen 2. vuotta tietojenkäsittelyn tradenomiksi Laureassa, keskityksenä digitaalisten palvelujen kehittäminen. Laureassa olen saanut erinomaisia työkaluja taitojeni kehittämiseen ja siksi uskaltauduinkin laittamaan haaveeni luovasta urasta eteenpäin.
+    </p>
+    &nbsp;
+    <h2 data-fi="Miksi valitsisit minut?" data-en="Why should you choose me?">Miksi valitsisit minut?</h2>
+    <p data-fi="Muuttuva maailmamme ja tekoäly on näyttänyt, että tarvitsemme oikeita suunnittelijoita. Yhteiskuntamme kannalta on erittäin tärkeää, että luova osuus projekteista jätetään valtaosin ihmisten käsiin. Vaikka tekoäly voi toimia meille hyvänä työkaluna ja apulaisena, on tärkeää kulttuurin ja taiteen kannalta antaa oikeiden ihmisten luoda ja olla luovia. Siksipä minä haluan tarjota osaamistani edullisesti, mutta laadukkaasti ja näyttää, kuinka suuren merkityksen ihmisen kädenjälki jättää sinun projekteihisi."
+       data-en="Our changing world and artificial intelligence have shown that we need real designers. It is very important for our society that the creative part of projects is left mostly in the hands of people. Although artificial intelligence can serve as a good tool and assistant for us, it is important for culture and art to let real people create and be creative. That is why I want to offer my expertise at a low cost, but with high quality and show how much importance the human touch leaves on your projects.">
+       Muuttuva maailmamme ja tekoäly on näyttänyt, että tarvitsemme oikeita suunnittelijoita. Yhteiskuntamme kannalta on erittäin tärkeää, että luova osuus projekteista jätetään valtaosin ihmisten käsiin. Vaikka tekoäly voi toimia meille hyvänä työkaluna ja apulaisena, on tärkeää kulttuurin ja taiteen kannalta antaa oikeiden ihmisten luoda ja olla luovia. Siksipä minä haluan tarjota osaamistani edullisesti, mutta laadukkaasti ja näyttää, kuinka suuren merkityksen ihmisen kädenjälki jättää sinun projekteihisi.
+    </p>
+  </section>
+
+  <!-- Tools-sivu -->
+  <section id="tools" class="page-section">
+    <h2 data-fi="Työskentelytavat" data-en="Working methods">Työskentelytavat</h2>
+    <p data-fi="Tähän voit lisätä tiedot käyttämistäsi ohjelmista, työkaluista ja tekniikoista."
+       data-en="Here you can list the software, tools, and technologies you use.">
+       Tähän voit lisätä tiedot käyttämistäsi ohjelmista, työkaluista ja tekniikoista.
+    </p>
+  </section>
+
+  <!-- Contact-sivu -->
+  <section id="contact" class="page-section contact">
+    <h2 data-fi="Yhteystiedot" data-en="Contact">Yhteystiedot</h2>
+    <h4 data-fi="Ota yhteyttä niin jutellaan lisää toiveistasi projektiasi varten!" data-en="Contact me and we can talk more about your wishes for your project!">Ota yhteyttä niin jutellaan lisää toiveistasi projektiasi varten!</h4>
+
+    <form class="contact-form" action="https://formspree.io/f/xeorzlak" method="POST">
+      <label for="name" data-fi="Nimi:" data-en="Name:">Nimi:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email" data-fi="Sähköposti:" data-en="Email:">Sähköposti:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message" data-fi="Viesti:" data-en="Message:">Viesti:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" data-fi="Lähetä" data-en="Send">Lähetä</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &nbsp;
+    <p data-fi="00200 Helsinki Suomi" 
+       data-en="00200 Helsinki Finland">
+       00200 Helsinki Suomi
+    </p>
+    <a href="https://www.linkedin.com/in/matilda-t%C3%B6rnqvist-822541206/" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/matqvist?igsh=MTQ1aDVodDdsYThj&utm_source=qr" class="fa fa-instagram"></a>
+    &nbsp;
+    <p data-fi="© 2025 Matilda Törnqvist. Kaikki oikeudet pidätetään." 
+       data-en="© 2025 Matilda Tornqvist. All rights reserved.">
+       © 2025 Matilda Törnqvist. Kaikki oikeudet pidätetään.
+    </p>
+    &nbsp;
+  </footer>
+
+  <script>
+    // Kielenvaihto: vaihtaa kaikki tekstit, joissa on data-fi ja data-en
+    function setLanguage(lang) {
+      const elements = document.querySelectorAll("[data-fi]");
+      elements.forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+    }
+
+    // Hamburger-menu
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const imgs = document.querySelectorAll('.img');
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      const itemsToShow = 4;
+      let currentIndex = 0;
+
+      function showImages() {
+        for (let i = currentIndex; i < currentIndex + itemsToShow; i++) {
+          if (imgs[i]) {
+            imgs[i].classList.add('visible');
+          }
+        }
+
+        currentIndex += itemsToShow;
+
+        if (currentIndex >= imgs.length) {
+          loadMoreBtn.style.display = 'none';
+        }
+      }
+
+      // Aluksi näytetään ensimmäiset
+      showImages();
+
+      loadMoreBtn.addEventListener('click', showImages);
+    });
+  </script>
+</body>
+</html>
