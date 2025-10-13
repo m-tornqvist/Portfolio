@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
   <!-- Yläpalkki -->
   <header class="navbar">
@@ -217,5 +218,26 @@
       });
     });
   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Lisää fade-in kaikkiin haluttuihin elementteihin
+    document.querySelectorAll('h1, h2, h3, p, img, .img, .hero-text, .loadMoreBtn')
+      .forEach(el => el.classList.add('fade-in'));
+
+    // Sama havaintologiikka kuin aiemmin
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  });
+</script>
+
 </body>
 </html>

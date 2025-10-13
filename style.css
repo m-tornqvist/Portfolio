@@ -287,3 +287,16 @@ body {
   background: none;
   color: #e7d4bb;
 }
+
+/* Lähtötila: piilotettu ja hieman alhaalla */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Kun elementti näkyy ruudussa */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
