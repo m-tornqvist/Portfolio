@@ -144,7 +144,7 @@ body {
 }
 
 .loadMoreBtn {
-
+  flex-basis: 80%;
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
@@ -159,15 +159,6 @@ body {
 
 .loadMoreBtn:hover {
   background-color: #e7d4bb;
-}
-
-.load-more-container {
-  flex-basis: 100%;
-  align-self: center;
-  margin: 20px auto;
-  width: 100%;
-  text-align: center;
-  margin-top: 1rem;
 }
 
 .img img {
