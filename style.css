@@ -126,7 +126,6 @@ body {
 .img {
   margin: 0%;
   padding: 0%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +144,7 @@ body {
 }
 
 .loadMoreBtn {
+
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
@@ -157,8 +157,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-#loadMoreBtn:hover {
+.loadMoreBtn:hover {
   background-color: #e7d4bb;
+}
+
+.load-more-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .img img {
