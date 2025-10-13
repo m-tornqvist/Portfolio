@@ -117,9 +117,6 @@ body {
 
 /* Kuvien asetukset */
 .img-container {
-  margin: 0%;
-  padding: 0%;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -139,7 +136,7 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  aspect-ratio: unset;
+  aspect-ratio: 1 / 1;
   display: none;
 }
 
@@ -179,6 +176,12 @@ body {
   .img {
     flex: 1 1 100%;
     height: auto;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .img-container {
+    gap: 1px; /* pienempi väli vaakasuunnassa */
   }
 }
 /* Kuvien asetukset loppuu*/
