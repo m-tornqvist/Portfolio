@@ -41,6 +41,9 @@
   <!-- Work-sivu -->
   <section id="work" class="page-section">
     <h2 data-fi="Työt" data-en="Work">Työt</h2>
+
+    <!-- Eka kuvagaleeria -->
+    <h3 data-fi="Digitaalinen taide" data-en="Digital art">Digitaalinen taide</h3>
     <div class="img-container" id="gallery1">
     <div class="img"><img src="images/projects/Candyland.png" alt="Candyland"></div>
     <div class="img"><img src="images/projects/logo.jpg" alt="Logo"></div>
@@ -50,21 +53,29 @@
     <div class="img"><img src="images/projects/Lyyli.png" alt="Lyyli"></div>
     <div class="img"><img src="images/projects/pumpkin.png" alt="Pumpkin"></div>
     <div class="img"><img src="images/projects/Rallyrat.png" alt="Rally Rat"></div>
-    <button class="loadMoreBtn" data-gallery="gallery1" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button>
-    </div>
-
-    <!-- Toinen kuvagalleria -->
-    <h3 data-fi="3D-mallit" data-en="3D Models">3D-mallit</h3>
-    <div class="img-container" id="gallery2">
     <div class="img"><img src="images/projects/RoboPirates.png" alt="Robo Pirates"></div>
     <div class="img"><img src="images/projects/Scarecrow.jpg" alt="Scarecrow"></div>
     <div class="img"><img src="images/projects/stones.png" alt="Stones"></div>
     <div class="img"><img src="images/projects/Sword.png" alt="Sword"></div>
-    <div class="img"><img src="images/projects/treehouse.png" alt="Treehouse"></div>
-    <div class="img"><img src="images/projects/robot.png" alt="Robot"></div>
-    <div class="img"><img src="images/projects/dragon.png" alt="Dragon"></div>
-    <div class="img"><img src="images/projects/car.png" alt="Car"></div>
+    <button class="loadMoreBtn" data-gallery="gallery1" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button>
+    </div>
+
+    <!-- Toinen kuvagalleria -->
+    <h3 data-fi="Graafinen suunnittelu" data-en="Graphic design">Graafinen suunnittelu</h3>
+    <div class="img-container" id="gallery2">
+    <div class="img"><img src="images/projects/Nocco.png" alt="Nocco"></div>
     <button class="loadMoreBtn" data-gallery="gallery2" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button>
+    </div>
+
+    <!--- Kolmas kuvagalleria -->
+    <h3 data-fi="3D" data-en="3D">3D</h3>
+    <div class="img-container" id="gallery3">
+    <div class="img"><img src="images/projects/UselessRobot.png" alt="Robot"></div>
+    <div class="img"><img src="images/projects/room3.png" alt="Eyes"></div>
+    <div class="img"><img src="images/projects/eyes1.png" alt="Eyes"></div>
+    <div class="img"><img src="images/projects/alien.png" alt="Eyes"></div>
+    <div class="img"><img src="images/projects/robot2.png" alt="Robot"></div>
+    <button class="loadMoreBtn" data-gallery="gallery3" data-fi="Lataa lisää" data-en="Load more">Lataa lisää</button>
     </div>
   </section>
 
@@ -197,8 +208,8 @@
 
     // Nappia painettaessa ladataan lisää kuvia
     loadMoreBtn.addEventListener("click", showImages);
+      });
     });
-  });
   </script>
 </body>
 </html>
