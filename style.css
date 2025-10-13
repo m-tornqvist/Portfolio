@@ -124,6 +124,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2px;
+
+  align-content: flex-start;
 }
 
 .img {
@@ -138,7 +140,7 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: unset;
   display: none;
 }
 
