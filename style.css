@@ -162,6 +162,9 @@ body {
 }
 
 .load-more-container {
+  flex-basis: 100%;
+  align-self: center;
+  margin: 20px auto;
   width: 100%;
   text-align: center;
   margin-top: 1rem;
