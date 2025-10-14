@@ -147,6 +147,7 @@ body {
 /*lataa lisää toiminto */
 .img.visible {
   display: flex; /* Näytetään ne, jotka halutaan */
+  opacity: 1;
 }
 
 .loadMoreBtn {
@@ -183,16 +184,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 4px;
+  /*border-radius: 4px;
 
   /* Tärkeää: pyöristys myös itse kuvalle */
   border-radius: inherit;
   display: block;
-
-  /* Safari bug fixit */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 @media (max-width: 600px) {
