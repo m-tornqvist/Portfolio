@@ -129,17 +129,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   color: #fff;
-  flex: 1 1 200px; /* Skaalautuvuus */
+  flex: 4 5 200px; /* Skaalautuvuus */
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
   aspect-ratio: 4 / 5;
   display: none;
 
-  /* Lisää nämä rivit */
   border-radius: 8px; /* näkyy myös iPhonella */
-  -webkit-mask-image: -webkit-radial-gradient(white, black); /* Safari fix */
   backface-visibility: hidden;
   transform: translateZ(0);
 }
