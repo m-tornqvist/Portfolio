@@ -136,6 +136,12 @@ body {
   overflow: hidden;
   aspect-ratio: 4 / 5;
   display: none;
+
+  /* Lisää nämä rivit */
+  border-radius: 8px; /* näkyy myös iPhonella */
+  -webkit-mask-image: -webkit-radial-gradient(white, black); /* Safari fix */
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /*lataa lisää toiminto */
@@ -178,6 +184,15 @@ body {
   height: 100%;
   object-fit: contain;
   border-radius: 4px;
+
+  /* Tärkeää: pyöristys myös itse kuvalle */
+  border-radius: inherit;
+  display: block;
+
+  /* Safari bug fixit */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 @media (max-width: 600px) {
