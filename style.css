@@ -1,4 +1,5 @@
 /* Yleiset asetukset */
+
 * {
   margin: 2px;
   padding: 5px;
@@ -7,35 +8,34 @@
 
 body {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: large;
   color: #141414; /* kaikki teksti, paitsi navipalkki ja hero */
   line-height: 1.6;
   background-color: #0a0808;
-  text-shadow: 2px 2px 1.5px #947b5e;
+  text-shadow: 2px 2px 1.5px #945e72;
 }
 
 /* Yläpalkki */
 .navbar {
-  font-family: "Frijole", system-ui;
+  font-family: "Rubik Dirt", system-ui;
+  font-size: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  background: #c6c2f2; /* navipalkin väri */
+  background: #dc97a5; /* navipalkin väri */
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-radius: 10px;
+  border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.582) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
 h2, h3 {
-  font-family: "Frijole", system-ui;
+  font-family: "Rubik Dirt", system-ui;
 }
 
 .navbar .logo {
-  font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
@@ -56,16 +56,17 @@ h2, h3 {
   margin-left: 0.5rem;
   padding: 0.3rem 0.6rem;
   border: none;
-  background: #180605;
-  color: #e7d4bb;
+  background: #10070b;
+  color: #deadb7;
   cursor: pointer;
   border-radius: 4px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Rubik Dirt", system-ui;
+  font-size: 17px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .lang-switch button:hover {
-  background: #e7d4bb;
+  background: #dc97a5;
 }
 
 /* Hamburger-menu */
@@ -82,12 +83,12 @@ h2, h3 {
   align-items: center;
   gap: 2rem;
   padding: 75px;
-  background: #14151b; /* heron väri */
-  color: #e7d4bb; /* heron tekstin väri */
+  background: #10070b; /* heron väri */
+  color: #deadb7; /* heron tekstin väri */
   font-size: large;
-  border-radius: 10px;
+  border-radius: 6px;
   text-shadow: 2px 2px 4px #000000;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 103, 154, 0.12) 0px -12px 30px, rgba(194, 64, 127, 0.582) 0px 4px 6px, rgba(236, 101, 171, 0.17) 0px 12px 13px, rgba(160, 70, 113, 0.09) 0px -3px 5px;
 }
 
 .hero-img {
@@ -112,10 +113,10 @@ h2, h3 {
 /* Sivujen peruslayout */
 .page-section {
   padding: 3rem 2rem;
-  background-color: #c6c2f2; /* loppuosan väri */
-  border-radius: 10px;
+  background-color: #dc97a5; /* loppuosan väri */
+  border-radius: 6px;
   text-shadow: none;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 103, 156, 0.12) 0px -12px 30px, rgba(194, 64, 116, 0.582) 0px 4px 6px, rgba(236, 101, 168, 0.17) 0px 12px 13px, rgba(160, 70, 109, 0.09) 0px -3px 5px;
 }
 
 .page-section h2 {
@@ -161,17 +162,17 @@ h2, h3 {
   margin: 20px auto;
   display: block;
   padding: 10px 20px;
-  background-color: #180605;
+  background-color: #10070b;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Frijole", system-ui;
+  font-family: "Rubik Dirt", system-ui;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .loadMoreBtn:hover {
-  background-color: #e7d4bb;
+  background-color: #deadb7;
 }
 
 .load-more-container {
@@ -224,10 +225,10 @@ h2, h3 {
 }
 
 .contact-form button {
-  font-family: "Frijole", system-ui;
+  font-family: "Rubik Dirt", system-ui;
   padding: 0.8rem;
   border: none;
-  background: #180605;
+  background: #10070b;
   color: #fff;
   cursor: pointer;
   border-radius: 4px;
@@ -235,20 +236,20 @@ h2, h3 {
 }
 
 .contact-form button:hover {
-  background: #e7d4bb;
+  background: #deadb7;
 }
 
 /* Footer */
 .footer {
-  font-family: "Frijole", system-ui;
+  font-family: "Rubik Dirt", system-ui;
   text-align: center;
   text-shadow: none;
   padding: 2rem 4rem;
-  background: #14151b;
-  color: #e7d4bb;
+  background: #10070b;
+  color: #deadb7;
   font-size: 0.9rem;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 103, 165, 0.12) 0px -12px 30px, rgba(194, 64, 125, 0.582) 0px 4px 6px, rgba(236, 101, 164, 0.17) 0px 12px 13px, rgba(160, 70, 106, 0.09) 0px -3px 5px;
 }
 
 /* Responsiivisuus */
@@ -300,7 +301,7 @@ h2, h3 {
   text-align: center;
   text-decoration: none;
   background: none;
-  color: #e7d4bb;
+  color: #deadb7;
 }
 
 /* Lähtötila: piilotettu ja hieman alhaalla */
