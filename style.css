@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  background: #e7cba7; /* navipalkin väri */
+  background: #c6c2f2; /* navipalkin väri */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -82,12 +82,12 @@ h2, h3 {
   align-items: center;
   gap: 2rem;
   padding: 75px;
-  background: #180605; /* heron väri */
+  background: #14151b; /* heron väri */
   color: #e7d4bb; /* heron tekstin väri */
   font-size: large;
   border-radius: 10px;
   text-shadow: 2px 2px 4px #000000;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
 }
 
 .hero-img {
@@ -112,10 +112,10 @@ h2, h3 {
 /* Sivujen peruslayout */
 .page-section {
   padding: 3rem 2rem;
-  background-color: #e7cba7; /* loppuosan väri */
+  background-color: #c6c2f2; /* loppuosan väri */
   border-radius: 10px;
   text-shadow: none;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 139, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
 }
 
 .page-section h2 {
@@ -244,11 +244,11 @@ h2, h3 {
   text-align: center;
   text-shadow: none;
   padding: 2rem 4rem;
-  background: #180605;
+  background: #14151b;
   color: #e7d4bb;
   font-size: 0.9rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 145, 103, 0.12) 0px -12px 30px, rgba(194, 94, 64, 0.582) 0px 4px 6px, rgba(236, 101, 101, 0.17) 0px 12px 13px, rgba(160, 70, 70, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(202, 103, 235, 0.12) 0px -12px 30px, rgba(153, 64, 194, 0.582) 0px 4px 6px, rgba(193, 101, 236, 0.17) 0px 12px 13px, rgba(137, 70, 160, 0.09) 0px -3px 5px;
 }
 
 /* Responsiivisuus */
