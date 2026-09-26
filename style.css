@@ -1,0 +1,319 @@
+/* Yleiset asetukset */
+
+* {
+  margin: 2px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Electrolize", sans-serif;
+  font-size: 22px;
+  color: #141414; /* kaikki teksti, paitsi navipalkki ja hero */
+  line-height: 1.6;
+  background-color: #0a0808;
+  text-shadow: 2px 2px 1.5px #90705b;
+}
+
+/* Yläpalkki */
+.navbar {
+  font-family: "Wallpoet", sans-serif;
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background: #dbc6bd; /* navipalkin väri */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.582) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+h2, h3 {
+  font-family: "Wallpoet", sans-serif;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #000000; /* navin tekstin väri */
+  font-weight: 500;
+}
+
+.lang-switch button {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border: none;
+  background: #10070b;
+  color: #f0e4cf;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: "Wallpoet", sans-serif;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.lang-switch button:hover {
+  background: #f0e4cf;
+}
+
+/* Hamburger-menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hero-osio */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 75px;
+  background-image: url(images/BG8.1.jpg); /* heron väri */
+  color: #f0e4cf; /* heron tekstin väri */
+  font-size: large;
+  border-radius: 4px;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 103, 154, 0.12) 0px -12px 30px, rgba(194, 64, 127, 0.582) 0px 4px 6px, rgba(236, 101, 171, 0.17) 0px 12px 13px, rgba(160, 70, 113, 0.09) 0px -3px 5px;
+}
+
+.hero-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero-text p {
+  max-width: 600px;
+}
+
+/* Sivujen peruslayout */
+.page-section {
+  padding: 3rem 2rem;
+  background-color: #dbc6bd; /* loppuosan väri */
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 132, 103, 0.12) 0px -12px 30px, rgba(194, 92, 64, 0.582) 0px 4px 6px, rgba(236, 135, 101, 0.17) 0px 12px 13px, rgba(160, 100, 70, 0.09) 0px -3px 5px;
+}
+
+.page-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+/* Kuvien asetukset */
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+}
+
+.img {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #fff;
+  flex: 4 5 200px; /* Skaalautuvuus */
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  display: none;
+
+  border-radius: 3px; /* näkyy myös iPhonella */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/*lataa lisää toiminto */
+.img.visible {
+  display: flex; /* Näytetään ne, jotka halutaan */
+  opacity: 1;
+}
+
+.loadMoreBtn {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #10070b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Wallpoet", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.loadMoreBtn:hover {
+  background-color: #f0e4cf;
+}
+
+.load-more-container {
+  flex-basis: 100%;
+  align-self: center;
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.img img {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .img {
+    flex: 4 5 100%;
+    height: auto;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .img-container {
+    gap: 1px; /* pienempi väli vaakasuunnassa */
+  }
+}
+/* Kuvien asetukset loppuu*/
+
+.contact-form {
+  font-family: "Wallpoet", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.contact-form button {
+  font-family: "Wallpoet", sans-serif;
+  padding: 0.8rem;
+  border: none;
+  background: #10070b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.contact-form button:hover {
+  background: #f0e4cf;
+}
+
+/* Footer */
+.footer {
+  font-family: "Wallpoet", sans-serif;
+  text-align: center;
+  text-shadow: none;
+  padding: 2rem 4rem;
+  background: #10070b;
+  color: #f0e4cf;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(235, 140, 103, 0.12) 0px -12px 30px, rgba(194, 90, 64, 0.582) 0px 4px 6px, rgba(236, 139, 101, 0.17) 0px 12px 13px, rgba(160, 89, 70, 0.09) 0px -3px 5px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+  }
+
+  .navbar nav.active {
+    display: block;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    height: 120px;
+  }
+}
+
+.fa {
+  padding: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  color: #f0e4cf;
+}
+
+/* Lähtötila: piilotettu ja hieman alhaalla */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Kun elementti näkyy ruudussa */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
